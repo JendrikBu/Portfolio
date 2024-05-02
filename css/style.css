@@ -41,7 +41,7 @@ h4,
 h5,
 h6 {
   margin: 0;
-  color: #111111;
+  color: #ffffff;
   font-weight: 400;
   font-family: "Play", sans-serif;
 }
@@ -617,7 +617,7 @@ ol {
 .counter {
   background: #100028;
   height: 840px;
-  padding-top: 380px;
+  padding-top: 180px;
   overflow: hidden;
 }
 

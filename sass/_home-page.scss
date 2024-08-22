@@ -311,6 +311,35 @@
   }
 }
 
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logos img {
+  max-width: 100px;
+  height: auto;
+}
+
+
 /*---------------------
   Team
 -----------------------*/
@@ -480,7 +509,7 @@
     margin-bottom: 22px;
   }
 
-  p {
+  .callto p {
     font-size: 15px;
     color: $white-color;
     opacity: .7;
@@ -488,7 +517,7 @@
     margin-bottom: 55px;
   }
 
-  a {
+ .callto a {
     color: $white-color;
     background: $primary-color;
     font-size: 15px;
@@ -499,4 +528,6 @@
     display: inline-block;
     padding: 14px 32px 12px;
   }
+
+  
 }

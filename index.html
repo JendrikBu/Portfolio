@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jendrik.art</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="galleria-1.6.1\src\galleria.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+
+    <header class="showreel">
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+            <source src="video/Showreel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+            <div class="overlay">
+                <div class="intro-text">
+                    <h1>Jendrik Buschmann</h1>
+                  <span>Medieninformatiker - Film</span>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="about_me" id="about me">
+        <h2>About me</h2>
+        <div class="about_me_content">
+            <img src="img/about me.jpg" class="about_me_img" alt="About Me">
+            <p> Moin! Ich bin Jendrik, ein leidenschaftlicher Filmstudent 
+                mit einer Vorliebe für Werbefilmproduktionen. 
+                Hier teile ich meine kreativen Projekte und Erfahrungen, 
+                die ich auf meinem Weg durch die faszinierende Welt des Films gesammelt habe.
+                Mein Ziel ist es, Geschichten zu erzählen, die nicht nur unterhalten, 
+                sondern auch zum Nachdenken anregen.
+      
+
+            </p>
+        </div>
+    </div>
+
+    <div class="video_title" id="video_title">
+        <h2>Videography & 3D-Design:</h2>
+    </div>
+    
+    <div class="video" id="video">
+       
+            <video src="video/TitleDesign.mp4" class="slider" autoplay loop muted controls></video>
+            
+            <ul>
+                <li onclick="videoslider('video/TitleDesign.mp4')"><video src="video/TitleDesign.mp4" poster="img/work/TitleDesign.jpg"></video></li>
+                <li onclick="videoslider('video/01_Watch.mp4')"><video src="video/01_Watch.mp4" poster="img/work/watch.jpg"></video></li>
+                <li onclick="videoslider('video/Filmdreh.mp4')"><video src="video/Filmdreh.mp4" poster="img/work/Filmdreh.jpg"></video></li>
+                <li onclick="videoslider('video/Mockumentary.mp4')"><video src="video/Mockumentary.mp4" poster="img/work/Mockumentary.jpg"></video></li>
+                <li onclick="videoslider('video/Weltraum.mp4')"><video src="video/Weltraum.mp4" poster="img/work/Weltraum.jpg"></video></li>
+                <li onclick="videoslider('video/FIlmschnitt.mp4')"><video src="video/FIlmschnitt.mp4" poster="img/work/Filmschnitt.jpg"></video></li>
+            </ul>
+        </div>
+    
+
+    <script>
+
+        function videoslider(links){
+            document.querySelector(".slider").src = links;
+        }
+
+    </script>
+
+
+    <div class="hard_software" id="hard_software">
+
+        <div class="software">
+
+            <h3>Software:</h3>
+
+            <ul>
+                <img src="img/softwareimg/resolve.png">
+                <img src="img/softwareimg/fusion.png">
+                <img src="img/softwareimg/premierepro.png">
+                <img src="img/softwareimg/aftereffects.png">
+                <img src="img/softwareimg/photoshop.png">
+                <img src="img/softwareimg/lightroom.png">
+                <img src="img/softwareimg/illustrator.png">
+                <img src="img/softwareimg/indesign.png">
+                <img src="img/softwareimg/xd.png">
+                <img src="img/softwareimg/REAPER_logo.png">
+                <img src="img/softwareimg/logic.png">
+                <img src="img/softwareimg/blender.png">
+                <!-- <img src="img/softwareimg/logicpro.png" > -->
+
+
+            </ul>
+
+        </div>
+
+        <div class="hardware">
+            <h3>Hardware:</h3>
+            <ul>
+                <img src="img/brandsimg/arri.png">
+                <img src="img/brandsimg/sony.png">
+                <img src="img/brandsimg/blackmagic.png">
+                <img src="img/brandsimg/canon.png">
+                <img src="img/brandsimg/gopro.png">
+
+
+            </ul>
+        </div>
+    </div>
+
+   
+
+
+
+    <script>
+        (function() {
+            function loadGalleriaTheme() {
+                Galleria.loadTheme('galleria-1.6.1/themes/classic/galleria.classic.js');
+                Galleria.loadTheme('galleria-1.6.1/themes/folio/galleria.folio.js');
+
+                if (window.innerWidth <= 1000) {
+
+                    Galleria.run('.videoslide', {
+                        theme: 'classic'
+                    });
+                    Galleria.run('.galleria', {
+                        theme: 'classic'
+                    });
+                } else {
+                    Galleria.run('.videoslide', {
+                        theme: 'classic'
+                    });
+                    Galleria.run('.galleria', {
+                        theme: 'folio',
+                        _center: true
+                    });
+
+                }
+            }
+
+
+            loadGalleriaTheme();
+
+
+
+        }());
+    </script>
+
+
+    <div class="contact-form" id="contact">
+        <form action="send_email.php" method="post">
+    
+            <div class="footer-content">
+                <h3>Imprint</h3>
+                <p>Jendrik Buschmann</p>
+                <p>Glücksburger Str. 166 
+                <br>24943 Flensburg</br>
+                </p>
+                <p>E-Mail: <a href="mailto:jendrik.buschmann@gmail.com">Jendrik.Buschmann@gmail.com</a></p>
+                
+        
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Jendrik Buschmann. </p>
+                    <p> All rights reserved.</p>
+
+                    
+                </div>
+        </form>
+    </div>
+
+    <div class="LinkedIn" id="LinkedIn">
+        <a href="https://www.linkedin.com/in/jendrik-buschmann-a0a3231ab/"><i class="fa-brands fa-linkedin-in"></i></a>
+        
+    </div>
+
+    
+</body>
+
+
+
+</html>

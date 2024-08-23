@@ -33,7 +33,12 @@ video {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 15em;
+    text-align: center;
+    
 }
+
+
 
 .video .slider{
     position: absolute;
@@ -91,6 +96,7 @@ h2,
 h3 {
     font-family: 'Bosch';
     margin: 0;
+    
     
 }
 
@@ -226,13 +232,6 @@ a:checked {
 }
 
 
-.video{
-    padding-top: 15em;
-    
-    text-align: center;
-    align-items: center;
-
-}
 
 .video_title {
     padding-top: 5em;
@@ -546,18 +545,23 @@ button {
         padding: 0.5em;
     }
     .intro-text h1 {
-        font-size: 2.5em;
+        font-size: 2em;
+        margin-bottom: -1em;
     }
-    .intro-text h2 {
+    .intro-text span {
         font-size: 1.5em;
+        
     }
     p {
         font-size: 16pt;
         text-align: left;
     }
+
+
     h2 {
-        font-size: 2em;
+        font-size: 1.5em;
         line-height: 2em;
+        text-align: center;
     }
     h3 {
         font-size: 1.5em;
@@ -565,15 +569,17 @@ button {
 
     .video ul{
         position: absolute;
-        margin-bottom: 40em;
         left: 50%;
         transform: translateX(-50%);
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 20;   
-        margin-bottom: -40em;
+        
+        
     }
+
+  
 
     .hard_software {
         padding-top: 5em;
@@ -583,5 +589,6 @@ button {
 
     .contact-form {
         margin-top: 5em;
+        font-size: 1em;
     }
 }
